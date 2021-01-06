@@ -1,0 +1,10 @@
+server:
+  port: 9500
+  
+spring:  application:    name: CustomerMS
+  cloud:    consul:
+      discovery:        hostname: localhost      config:        enabled: true
+        prefix: config
+        default-context: application
+        profile-separator: '::'
+        format: yaml
